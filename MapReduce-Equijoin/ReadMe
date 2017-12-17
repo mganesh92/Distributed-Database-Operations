@@ -1,0 +1,26 @@
+**************************************READ ME*********************
+Jars Used: 
+hadoop-common-2.8.2
+hadoop-mapreduce-client-core-2.8.2
+main class: equijoin.java
+output jar name: equijoin.jar
+____________________________________
+MAPPER Function :
+
+The "Map" class is the Mapper function. It gets called for each record and it forms a key value pair. The key for my program is the the column value on which the equi-join is performed.
+
+REDUCER Function :
+The "Reduce" class is the Reducer function. In this part, the records are seperated into two lists (based on the table value) and the records are seperated based on their relation name. If the key is common then the records are merged into a single record, and written onto a file.
+
+The main function acts as a driver function. It calls the respectiver mapper and reducer classes as referenced.
+
+_____________________________________
+Done By: 
+Meenakshi ganesh
+1211108181
+mganesh1@asu.edu
+********************************************************************
+
+
+
+
